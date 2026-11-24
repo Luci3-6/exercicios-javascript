@@ -17,4 +17,4 @@ const boletim = alunos
     .join("\n");
 
 // Imprimindo o boletim completo
-console.log(boletim);
+console.log(boletim)

@@ -1,0 +1,25 @@
+.hobbies {
+    --cor-principal: #3498db;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid var(--cor-principal);
+    border-radius: 10px;
+    list-style: none;
+}
+
+.hobbies li {
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.hobbies li:hover {
+    background-color: var(--cor-principal);
+    color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+}
