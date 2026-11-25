@@ -1,0 +1,26 @@
+const campoNome = document.querySelector("#nome");
+const botao = document.querySelector("#botao");
+const mensagem = document.querySelector("#mensagem");
+
+const saudar = () => {
+  const nome = campoNome.value.trim();
+
+  if (nome === "") {
+    mensagem.textContent = "Por favor, digite seu nome!";
+    mensagem.style.color = "red";
+  } else {
+    mensagem.textContent = `Olá, ${nome}! Seja bem-vindo(a)!`;
+    mensagem.style.color = "green";
+    campoNome.value = "";
+  }
+};
+
+// Ao clicar no botão
+botao.addEventListener("click", saudar);
+
+// Ao pressionar Enter no campo
+campoNome.addEventListener("keydown", (evento) => {
+  if (evento.key === "Enter") {
+    saudar();
+  }
+});

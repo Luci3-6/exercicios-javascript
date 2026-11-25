@@ -9,7 +9,6 @@
     <h1>Boletim dos Alunos</h1>
     <h2>Todos os alunos</h2>
     <ul id="todos"></ul>
-
     <h2>Somente aprovados</h2>
     <ul id="aprovados"></ul>
     <script src="script.js"></script>
